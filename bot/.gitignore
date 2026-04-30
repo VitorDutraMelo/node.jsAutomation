@@ -1,0 +1,43 @@
+# 🔒 ENV (NUNCA subir isso)
+.env
+.env.local
+.env.*.local
+
+# 📦 Node modules
+node_modules/
+
+# 📁 Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 🧠 Sessions (WhatsApp Baileys)
+session/
+auth_info/
+baileys_store/
+
+# 🗂️ Dados locais
+sent.json
+
+# 🖥️ Sistema operacional
+.DS_Store
+Thumbs.db
+
+# 🧪 Test files
+test.js
+test*.js
+
+# 🧰 IDE / Editor
+.vscode/
+.idea/
+
+# 📦 Build / cache
+dist/
+build/
+.cache/
+
+# 🔐 Secrets
+*.pem
+*.key
