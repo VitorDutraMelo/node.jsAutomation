@@ -1,16 +1,19 @@
-const cron = require('node-cron');
-const { sendDeal } = require('./sendDeal');
+const sendDeal = require('./sendDeal');
 
 function startScheduler() {
   console.log('⏰ Scheduler iniciado...');
 
-  cron.schedule('* * * * *', () => {
-    console.log('🚀 [CRON] Disparando...');
+  
+  setTimeout(() => {
+    console.log('🚀 Enviando produto agora...');
+    sendDeal();
+  }, 3000);
 
-    sendDeal().catch(err => {
-      console.error('❌ Erro no envio:', err.message);
-    });
-  });
+  
+  setInterval(() => {
+    console.log('🚀 Disparando automático...');
+    sendDeal();
+  }, 60000); 
 }
 
 module.exports = { startScheduler };

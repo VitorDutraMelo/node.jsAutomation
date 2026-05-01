@@ -11,11 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "@whiskeysockets/baileys": "^7.0.0-rc.9",
+    "axios": "^1.15.2",
+    "cheerio": "^1.2.0",
     "dotenv": "^17.4.2",
     "link-preview-js": "^3.2.0",
     "node-cron": "^4.2.1",
     "node-telegram-bot-api": "^0.67.0",
     "openai": "^6.35.0",
+    "puppeteer": "^24.42.0",
     "qrcode-terminal": "^0.12.0",
     "winston": "^3.19.0"
   }

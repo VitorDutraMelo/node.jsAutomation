@@ -1,15 +1,12 @@
 function buildMessage(product) {
-  return `
-🔥 Kids Deal!
+  return `🔥 *${product.title}*
 
-⚽ ${product.title}
-🎨 ${product.description}
+💰 Price: ${product.price}
+📦 ${product.description}
 
-💰 Only ${product.price}
+👉 ${product.link}
 
-👉 Buy now:
-${product.link}
-`;
+#AmazonDeals`;
 }
 
 module.exports = { buildMessage };

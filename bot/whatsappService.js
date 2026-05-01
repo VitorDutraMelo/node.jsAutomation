@@ -1,5 +1,8 @@
 require('dotenv').config();
 
+const fs = require('fs');
+const path = require('path');
+
 const {
   default: makeWASocket,
   useMultiFileAuthState,
@@ -12,6 +15,7 @@ const qrcode = require('qrcode-terminal');
 let sock;
 const TARGET = process.env.WHATSAPP_TARGET;
 
+// 🔌 CONECTAR WHATSAPP
 async function connectWhatsApp() {
   const { state, saveCreds } = await useMultiFileAuthState('./session');
   const { version } = await fetchLatestBaileysVersion();
@@ -36,40 +40,42 @@ async function connectWhatsApp() {
 
       if (connection === 'open') {
         console.log('✅ WhatsApp conectado!');
-
-        setTimeout(() => {
-          console.log('🟢 WhatsApp pronto para envio!');
-          resolve();
-        }, 8000);
+        setTimeout(() => resolve(), 5000);
       }
 
       if (connection === 'close') {
         const reason = lastDisconnect?.error?.output?.statusCode;
 
-        console.log('❌ WhatsApp desconectado:', reason);
+        console.log('❌ Desconectado:', reason);
 
         if (reason !== DisconnectReason.loggedOut) {
           console.log('🔄 Reconectando...');
           connectWhatsApp();
-        } else {
-          console.log('⚠️ Sessão expirada. Escaneie novamente.');
         }
       }
     });
   });
 }
 
-async function sendToWhatsApp(message) {
+// 📤 ENVIAR MENSAGEM COM IMAGEM LOCAL
+async function sendToWhatsApp(message, imagePath) {
   try {
     if (!sock) throw new Error('WhatsApp não conectado');
 
-    await sock.sendMessage(
-      TARGET,
-      { text: message },
-      { linkPreview: false }
-    );
+    // 🔥 GARANTE CAMINHO ABSOLUTO
+    const fullPath = path.resolve(imagePath);
 
-    console.log('✅ WhatsApp enviado');
+    if (!fs.existsSync(fullPath)) {
+      console.log('❌ Imagem não encontrada:', fullPath);
+      return;
+    }
+
+    await sock.sendMessage(TARGET, {
+      image: fs.readFileSync(fullPath),
+      caption: message
+    });
+
+    console.log('✅ WhatsApp enviado!');
   } catch (error) {
     console.error('❌ WhatsApp erro:', error.message);
   }

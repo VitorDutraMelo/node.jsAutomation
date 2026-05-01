@@ -2,26 +2,22 @@ const fs = require('fs');
 
 const FILE = './sent.json';
 
-function getSentProducts() {
-  if (!fs.existsSync(FILE)) return [];
-
+function getSent() {
   return JSON.parse(fs.readFileSync(FILE));
 }
 
-function isProductSent(id) {
-  const sent = getSentProducts();
-  return sent.includes(id);
+function saveSentProduct(id) {
+  const data = getSent();
+  data.push(id);
+  fs.writeFileSync(FILE, JSON.stringify(data, null, 2));
 }
 
-function saveSentProduct(id) {
-  const sent = getSentProducts();
-
-  sent.push(id);
-
-  fs.writeFileSync(FILE, JSON.stringify(sent, null, 2));
+function isProductSent(id) {
+  const data = getSent();
+  return data.includes(id);
 }
 
 module.exports = {
-  isProductSent,
-  saveSentProduct
+  saveSentProduct,
+  isProductSent
 };

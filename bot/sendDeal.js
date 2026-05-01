@@ -1,34 +1,30 @@
 const { getNextProduct } = require('./productService');
-const { buildMessage } = require('./messageBuilder');
-const { sendToTelegram } = require('./telegramService');
 const { sendToWhatsApp } = require('./whatsappService');
-const { isProductSent, saveSentProduct } = require('./databaseService');
+const { sendToTelegram } = require('./telegramService');
 
 async function sendDeal() {
-  let product;
-  let attempts = 0;
+  const product = getNextProduct();
 
-  do {
-    product = getNextProduct();
-    attempts++;
-  } while (isProductSent(product.id) && attempts < 10);
-
-  if (isProductSent(product.id)) {
-    console.log('⚠️ Todos os produtos já foram enviados');
+  if (!product) {
+    console.log('⚠️ Nenhum produto disponível');
     return;
   }
 
-  const message = buildMessage(product);
+  const message = `
+🔥 ${product.title}
 
-  await sendToTelegram(message);
+💰 ${product.price}
 
-  await new Promise(res => setTimeout(res, 3000));
+📝 ${product.description}
 
-  await sendToWhatsApp(message);
+👉 ${product.link}
+`;
 
-  saveSentProduct(product.id);
+  console.log('📦 Enviando produto...');
 
-  console.log('🤖 Produto enviado');
+  // 🔥 ENVIA NOS DOIS
+  await sendToTelegram(message, product.image);
+  await sendToWhatsApp(message, product.image);
 }
 
-module.exports = { sendDeal };
+module.exports = sendDeal;
