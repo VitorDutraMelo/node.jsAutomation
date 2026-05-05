@@ -41,3 +41,4 @@ build/
 # 🔐 Secrets
 *.pem
 *.key
+/generated/prisma

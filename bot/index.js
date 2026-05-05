@@ -1,15 +1,8 @@
 require('dotenv').config();
+const startScheduler = require('./scheduler');
 
-const { connectWhatsApp } = require('./whatsappService');
-const { startScheduler } = require('./scheduler');
-
-async function start() {
-  console.log('🤖 Iniciando bot...');
-
-  await connectWhatsApp();
-
-  console.log('🟢 WhatsApp pronto');
-
+function start() {
+  console.log('🤖 Bot Telegram iniciado...');
   startScheduler();
 }
 

@@ -1,82 +1,20 @@
 [
   {
-    "id": "p20",
-    "title": "Kids Soccer Training Kit",
-    "description": "Perfect starter kit for young football players ⚽",
-    "price": "£12.99",
-    "link": "https://www.amazon.co.uk/dp/B0TEST001?tag=yourdealbot-21",
-    "image": "./assets/images/ideogram-v3.0_color.jpg"
+    "title": "Camisa do Brasil 2024",
+    "price": "£19.90",
+    "link": "https://example.com/produto1",
+    "image": "https://i.imgur.com/3ZQ3Z4V.jpg"
   },
   {
-    "id": "p21",
-    "title": "Mini Football Goal Set",
-    "description": "Portable goal for backyard matches",
-    "price": "£14.99",
-    "link": "https://www.amazon.co.uk/dp/B0TEST002?tag=yourdealbot-21",
-    "image": "./assets/images/ideogram-v3.0_color.jpg"
+    "title": "Bola de Futebol Nike",
+    "price": "£25.00",
+    "link": "https://example.com/produto2",
+    "image": "https://i.imgur.com/2nCt3Sbl.jpg"
   },
   {
-    "id": "p22",
-    "title": "Kids Football Jersey Kit",
-    "description": "Comfortable and stylish football outfit",
-    "price": "£13.49",
-    "link": "https://www.amazon.co.uk/dp/B0TEST003?tag=yourdealbot-21",
-    "image": "./assets/images/ideogram-v3.0_color.jpg"
-  },
-  {
-    "id": "p23",
-    "title": "Soccer Ball for Kids",
-    "description": "Durable ball for training and fun",
-    "price": "£9.99",
-    "link": "https://www.amazon.co.uk/dp/B0TEST004?tag=yourdealbot-21",
-    "image": "./assets/images/ideogram-v3.0_color.jpg"
-  },
-  {
-    "id": "p24",
-    "title": "Football Backpack",
-    "description": "Carry your gear in style 🎒",
-    "price": "£11.99",
-    "link": "https://www.amazon.co.uk/dp/B0TEST005?tag=yourdealbot-21",
-    "image": "./assets/images/ideogram-v3.0_color.jpg"
-  },
-  {
-    "id": "p25",
-    "title": "Kids Shin Guards Set",
-    "description": "Protection for safe football play",
-    "price": "£8.49",
-    "link": "https://www.amazon.co.uk/dp/B0TEST006?tag=yourdealbot-21",
-    "image": "./assets/images/ideogram-v3.0_color.jpg"
-  },
-  {
-    "id": "p26",
-    "title": "Football Cones Training Set",
-    "description": "Improve agility and control",
-    "price": "£7.99",
-    "link": "https://www.amazon.co.uk/dp/B0TEST007?tag=yourdealbot-21",
-    "image": "./assets/images/ideogram-v3.0_color.jpg"
-  },
-  {
-    "id": "p27",
-    "title": "Kids Football Boots",
-    "description": "Grip and comfort for young players",
-    "price": "£16.99",
-    "link": "https://www.amazon.co.uk/dp/B0TEST008?tag=yourdealbot-21",
-    "image": "./assets/images/ideogram-v3.0_color.jpg"
-  },
-  {
-    "id": "p28",
-    "title": "Football Sticker Pack",
-    "description": "Fun stickers for football lovers",
-    "price": "£3.99",
-    "link": "https://www.amazon.co.uk/dp/B0TEST009?tag=yourdealbot-21",
-    "image": "./assets/images/ideogram-v3.0_color.jpg"
-  },
-  {
-    "id": "p29",
-    "title": "Soccer Puzzle Game",
-    "description": "Learn while having fun 🧩",
-    "price": "£6.49",
-    "link": "https://www.amazon.co.uk/dp/B0TEST010?tag=yourdealbot-21",
-    "image": "./assets/images/ideogram-v3.0_color.jpg"
+    "title": "Chuteira Adidas Predator",
+    "price": "£59.99",
+    "link": "https://example.com/produto3",
+    "image": "https://i.imgur.com/5tj6S7Ol.jpg"
   }
 ]

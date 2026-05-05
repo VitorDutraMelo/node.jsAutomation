@@ -1,29 +1,20 @@
-require('dotenv').config();
-const TelegramBot = require('node-telegram-bot-api');
-const fs = require('fs');
+const axios = require('axios');
 
-const bot = new TelegramBot(process.env.TELEGRAM_TOKEN, {
-  polling: false
-});
-
-const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
-
-async function sendToTelegram(message, imagePath) {
+async function sendToTelegram(product, message) {
   try {
-    if (imagePath && fs.existsSync(imagePath)) {
-      await bot.sendPhoto(CHAT_ID, fs.readFileSync(imagePath), {
-        caption: message
-      });
-    } else {
-      await bot.sendMessage(CHAT_ID, message);
-    }
+    await axios.post(
+      `https://api.telegram.org/bot${process.env.TELEGRAM_TOKEN}/sendPhoto`,
+      {
+        chat_id: process.env.TELEGRAM_CHAT_ID,
+        photo: product.image,
+        caption: message,
+      }
+    );
 
-    console.log('✅ Telegram enviado');
-  } catch (error) {
-    console.error('❌ Telegram erro:', error.response?.body || error.message);
+    console.log('📨 Telegram enviado!');
+  } catch (err) {
+    console.log('❌ Erro Telegram:', err.response?.data || err.message);
   }
 }
 
-module.exports = {
-  sendToTelegram
-};
+module.exports = { sendToTelegram };

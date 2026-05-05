@@ -1,12 +1,10 @@
 function buildMessage(product) {
-  return `🔥 *${product.title}*
+  return `🔥 OFERTA DO DIA 🔥
 
-💰 Price: ${product.price}
-📦 ${product.description}
+🏷️ ${product.title}
+💰 ${product.price}
 
-👉 ${product.link}
-
-#AmazonDeals`;
+👉 ${product.link}`;
 }
 
-module.exports = { buildMessage };
+module.exports = buildMessage;

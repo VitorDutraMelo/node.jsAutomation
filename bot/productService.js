@@ -1,11 +1,23 @@
-const products = require('./products.json');
+const fs = require('fs');
 
-let index = 0;
-
-function getNextProduct() {
-  const product = products[index];
-  index = (index + 1) % products.length;
-  return product;
+function getData() {
+  const products = JSON.parse(fs.readFileSync('./products.json'));
+  const sent = JSON.parse(fs.readFileSync('./sentProducts.json'));
+  return { products, sent };
 }
 
-module.exports = { getNextProduct };
+function getNextProduct() {
+  const { products, sent } = getData();
+  return products.find(p => !sent.includes(p.id));
+}
+
+function markAsSent(id) {
+  const { sent } = getData();
+  sent.push(id);
+  fs.writeFileSync('./sentProducts.json', JSON.stringify(sent, null, 2));
+}
+
+module.exports = {
+  getNextProduct,
+  markAsSent
+};
