@@ -3,36 +3,138 @@
     "title": "Brainrot Stolen Edition Colouring Book",
     "price": "£7.99",
     "link": "https://www.amazon.co.uk/dp/B0G1SHXTZM?tag=vitordutra-21",
-    "image": "images/amazon.jpg"
+    "image": "images/roblox/roblox.jpg"
   },
   {
     "title": "Brainrot 24pcs Collectible Figures Set",
-    "price": "£8.89",
+    "price": "£9.99",
     "link": "https://www.amazon.co.uk/dp/B0FH6M12PV?tag=vitordutra-21",
-    "image": "images/miniatura.jpg"
+    "image": "images/pelucia/miniatura.jpg"
   },
   {
     "title": "Fun Coloring Book 100+ Pages",
     "price": "£6.49",
     "link": "https://www.amazon.co.uk/dp/B0DB81JG4S?tag=vitordutra-21",
-    "image": "images/minecraft.jpg"
+    "image": "images/minecraft/minecraft.jpg"
   },
   {
     "title": "Crayola Pokémon Colouring Book",
-    "price": "£2.99",
+    "price": "£3.00",
     "link": "https://www.amazon.co.uk/dp/B0C7KM5M58?tag=vitordutra-21",
-    "image": "images/pokemon.jpg"
+    "image": "images/pokemon/pokemon.jpg"
   },
   {
     "title": "Luxury Cars Coloring Book",
-    "price": "£3.40",
+    "price": "£3.79",
     "link": "https://www.amazon.co.uk/dp/0486444368?tag=vitordutra-21",
-    "image": "images/carro.jpg"
+    "image": "images/car/carro.jpg"
   },
   {
     "title": "Graffiti Animals Coloring Book",
-    "price": "£8.91",
+    "price": "£8.88",
     "link": "https://www.amazon.co.uk/dp/B0CMQLYF5T?tag=vitordutra-21",
-    "image": "images/monkey.jpg"
+    "image": "images/grafit/monkey.jpg"
+  },
+  {
+    "title": "99 Nights in the Forest Jumbo Coloring Book",
+    "price": "£6.67",
+    "link": "https://www.amazon.co.uk/dp/B0FNR77WRB?tag=vitordutra-21",
+    "image": "images/roblox/99.jpg"
+  },
+  {
+    "title": "99 Nights in Roblox Forest: The Deer Is Not a Monster",
+    "price": "£7.99",
+    "link": "https://www.amazon.co.uk/dp/B0FQWG25X9?tag=vitordutra-21",
+    "image": "images/roblox/99-forest.jpg"
+  },
+  {
+    "title": "Disney Stitch: A Cute and Cosy Colouring Book",
+    "price": "£6.00",
+    "description": "Immerse yourself in Stitch's cute and cosy world with over 40 relaxing colouring scenes featuring Stitch, Angel and friends from Lilo & Stitch.",
+    "link": "https://www.amazon.co.uk/dp/1835874363?tag=vitordutra-21",
+    "image": "images/geral/stitch.jpg"
+  },
+  {
+    "title": "My First Colouring Book: Large, Simple and Cute Pictures",
+    "price": "£4.99",
+    "description": "A fun and educational colouring book for toddlers ages 1-4 featuring simple illustrations with thick lines.",
+    "link": "https://www.amazon.co.uk/dp/B0BGZM9NND?tag=vitordutra-21",
+    "image": "images/geral/Screenshot 2026-05-06 155846.png"
+  },
+  {
+    "title": "Disney Princess: 5 in 1 Colouring",
+    "price": "£3.62",
+    "description": "A magical Disney Princess colouring adventure featuring 5 different activities and over 60 stickers.",
+    "link": "https://www.amazon.co.uk/dp/1837950075?tag=vitordutra-21",
+    "image": "images/princess/princesas2.jpg"
+  },
+  {
+    "title": "Mindfulness Coloring Book for Kids",
+    "price": "£5.99",
+    "description": "A calming and mindful colouring book designed to help children reduce stress and anxiety through creativity.",
+    "link": "https://www.amazon.co.uk/dp/B0CPQ1LG4K?tag=vitordutra-21",
+    "image": "images/grafit/grafit1.jpg"
+  },
+  {
+    "title": "Coloring Book for Kids Ages 4-8: Cute Unicorn, Mermaid, Princess & More",
+    "price": "£4.99",
+    "description": "A magical colouring book filled with unicorns, mermaids, princesses and adorable animals.",
+    "link": "https://www.amazon.co.uk/dp/B09YNDGN9L?tag=vitordutra-21",
+    "image": "images/princess/princesas1.jpg"
+  },
+  {
+    "title": "My Big Pink Book of Colouring",
+    "price": "£7.99",
+    "description": "A fun and creative colouring book packed with over 90 pages of amazing artwork.",
+    "link": "https://www.amazon.co.uk/dp/1837711801?tag=vitordutra-21",
+    "image": "images/dinossauro/dinossauro2.jpg"
+  },
+  {
+    "title": "Dog Man With Love: The Official Colouring Book",
+    "price": "£9.16",
+    "description": "The official Dog Man colouring book featuring over 100 fun and heartwarming panels.",
+    "link": "https://www.amazon.co.uk/dp/0702330140?tag=vitordutra-21",
+    "image": "images/geral/dogman.jpg"
+  },
+  {
+    "title": "Anila's - My Big Dinosaur & Animals Colouring Books - Set of 2",
+    "price": "£5.99",
+    "description": "A fun set of 2 colouring and activity books for children ages 3-8 featuring dinosaurs and animals.",
+    "link": "https://www.amazon.co.uk/dp/B0BSN7GNZF?tag=vitordutra-21",
+    "image": "images/dinossauro/dinossauro1.jpg"
+  },
+  {
+    "title": "Ultimate Football Heroes Colouring Book",
+    "price": "£3.00",
+    "description": "An exciting football colouring book featuring legendary players like Ronaldo, Messi and Haaland.",
+    "link": "https://www.amazon.co.uk/dp/1800784015?tag=vitordutra-21",
+    "image": "images/football/foot1.jpg"
+  },
+  {
+    "title": "Ultimate Football Heroes: Team Kit Designer Colouring Book",
+    "price": "£3.00",
+    "description": "A creative football colouring book where kids can design custom football kits.",
+    "link": "https://www.amazon.co.uk/dp/1789469104?tag=vitordutra-21",
+    "image": "images/football/foot4.jpg"
+  },
+  {
+    "title": "Football Colouring Book For Kids: Ages 4-8",
+    "price": "£7.99",
+    "description": "A fun-filled football colouring book designed for kids who love the beautiful game.",
+    "link": "https://www.amazon.co.uk/dp/1090953607?tag=vitordutra-21",
+    "image": "images/football/foot2.jpg"
+  },
+  {
+    "title": "Football Colouring and Activity Book",
+    "price": "£4.74",
+    "description": "An action-packed football colouring and activity book filled with exciting scenes and creative activities.",
+    "link": "https://www.amazon.co.uk/dp/1409583139?tag=vitordutra-21",
+    "image": "images/foot/football3.jpg"
+  },
+  {
+    "title": "99 Nights in the Forest Deer Plush Toy",
+    "price": "£7.88",
+    "link": "https://www.amazon.co.uk/dp/B0G7S9ZMVM?tag=vitordutra-21",
+    "image": "images/roblox/Animal.jpg"
   }
 ]
