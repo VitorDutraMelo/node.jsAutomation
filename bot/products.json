@@ -1,20 +1,38 @@
 [
   {
-    "title": "Camisa do Brasil 2024",
-    "price": "£19.90",
-    "link": "https://example.com/produto1",
-    "image": "https://i.imgur.com/3ZQ3Z4V.jpg"
+    "title": "Brainrot Stolen Edition Colouring Book",
+    "price": "£7.99",
+    "link": "https://www.amazon.co.uk/dp/B0G1SHXTZM?tag=vitordutra-21",
+    "image": "images/amazon.jpg"
   },
   {
-    "title": "Bola de Futebol Nike",
-    "price": "£25.00",
-    "link": "https://example.com/produto2",
-    "image": "https://i.imgur.com/2nCt3Sbl.jpg"
+    "title": "Brainrot 24pcs Collectible Figures Set",
+    "price": "£8.89",
+    "link": "https://www.amazon.co.uk/dp/B0FH6M12PV?tag=vitordutra-21",
+    "image": "images/miniatura.jpg"
   },
   {
-    "title": "Chuteira Adidas Predator",
-    "price": "£59.99",
-    "link": "https://example.com/produto3",
-    "image": "https://i.imgur.com/5tj6S7Ol.jpg"
+    "title": "Fun Coloring Book 100+ Pages",
+    "price": "£6.49",
+    "link": "https://www.amazon.co.uk/dp/B0DB81JG4S?tag=vitordutra-21",
+    "image": "images/minecraft.jpg"
+  },
+  {
+    "title": "Crayola Pokémon Colouring Book",
+    "price": "£2.99",
+    "link": "https://www.amazon.co.uk/dp/B0C7KM5M58?tag=vitordutra-21",
+    "image": "images/pokemon.jpg"
+  },
+  {
+    "title": "Luxury Cars Coloring Book",
+    "price": "£3.40",
+    "link": "https://www.amazon.co.uk/dp/0486444368?tag=vitordutra-21",
+    "image": "images/carro.jpg"
+  },
+  {
+    "title": "Graffiti Animals Coloring Book",
+    "price": "£8.91",
+    "link": "https://www.amazon.co.uk/dp/B0CMQLYF5T?tag=vitordutra-21",
+    "image": "images/monkey.jpg"
   }
 ]

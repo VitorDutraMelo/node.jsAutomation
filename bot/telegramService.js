@@ -1,20 +1,33 @@
-const axios = require('axios');
+import axios from "axios";
+import fs from "fs";
+import FormData from "form-data";
 
-async function sendToTelegram(product, message) {
+export async function sendToTelegram(product) {
   try {
+    const form = new FormData();
+
+    form.append("chat_id", process.env.TELEGRAM_CHAT_ID);
+    form.append(
+      "caption",
+      `🔥 ${product.title}
+
+💰 ${product.price}
+
+👉 ${product.link}`
+    );
+
+    form.append("photo", fs.createReadStream(product.image));
+
     await axios.post(
       `https://api.telegram.org/bot${process.env.TELEGRAM_TOKEN}/sendPhoto`,
+      form,
       {
-        chat_id: process.env.TELEGRAM_CHAT_ID,
-        photo: product.image,
-        caption: message,
+        headers: form.getHeaders(),
       }
     );
 
-    console.log('📨 Telegram enviado!');
+    console.log("📨 Telegram enviado!");
   } catch (err) {
-    console.log('❌ Erro Telegram:', err.response?.data || err.message);
+    console.error("❌ Erro Telegram:", err.response?.data || err.message);
   }
 }
-
-module.exports = { sendToTelegram };
